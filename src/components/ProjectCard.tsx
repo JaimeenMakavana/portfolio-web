@@ -5,11 +5,13 @@ import { GoArrowUpRight } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 const ProjectCard = () => {
   return (
-    <section className=" py-5">
+    <section className=" py-5 grid   sm:grid-cols-2 sm:gap-5">
       <ImageDiv />
-      <Description />
-      <ProjectInfo />
-      <SocialMedia />
+      <div>
+        <Description />
+        <ProjectInfo />
+        <SocialMedia />
+      </div>
     </section>
   );
 };
@@ -18,7 +20,7 @@ export default ProjectCard;
 
 const ImageDiv = () => {
   return (
-    <div className=" px-4 pt-10 rounded-lg bg-gray-900 relative">
+    <div className=" px-4 pt-10 rounded-lg bg-gray-900 relative z-0 ">
       <button className=" absolute left-4 text-white top-[6px] text-sm bg-black rounded-full px-2 py-1">
         Conceptual Work
       </button>
@@ -35,7 +37,7 @@ const ImageDiv = () => {
 
 const Description = () => {
   return (
-    <div className="my-5">
+    <div className="my-5 md:my-0">
       <h1 className=" text-white text-2xl">
         Promotional landing page for our favorite show
       </h1>

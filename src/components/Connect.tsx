@@ -4,30 +4,33 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Connect = () => {
   return (
-    <section className=" px-3">
+    <section className=" px-3 max-w-screen-lg mx-auto grid md:grid-cols-2 md:gap-10 md:px-10 ">
       <div>
-        <h1 className=" text-2xl font-bold mb-2">LET&apos;S CONNECT</h1>
-        <p className=" text-[--gray]">
-          Say hello at{" "}
-          <span className=" underline underline-[--green] underline-offset-[3px]">
-            jaimeen.makavana@gmail.com
-          </span>
-        </p>
-        <p className=" text-[--gray] mt-3">
-          For more info, here&apos;s my{" "}
-          <span className=" underline underline-[--green] underline-offset-[3px]">
-            Resume
-          </span>
-        </p>
+        <div>
+          <h1 className=" text-2xl font-bold mb-2">LET&apos;S CONNECT</h1>
+          <p className=" text-[--gray]">
+            Say hello at{" "}
+            <span className=" underline underline-[--green] underline-offset-[3px]">
+              jaimeen.makavana@gmail.com
+            </span>
+          </p>
+          <p className=" text-[--gray] mt-3">
+            For more info, here&apos;s my{" "}
+            <span className=" underline underline-[--green] underline-offset-[3px]">
+              Resume
+            </span>
+          </p>
+        </div>
+        <div className=" flex justify-start items-center gap-4 my-5">
+          <FaLinkedinIn className=" text-[--green] size-[28px]" />
+          <FaGithub className=" text-[--green] size-[28px]" />
+          <FaXTwitter className=" text-[--green] size-[28px]" />
+          <FaInstagram className=" text-[--green] size-[28px]" />
+        </div>
       </div>
-      <div className=" flex justify-start items-center gap-4 my-5">
-        <FaLinkedinIn className=" text-[--green] size-[28px]" />
-        <FaGithub className=" text-[--green] size-[28px]" />
-        <FaXTwitter className=" text-[--green] size-[28px]" />
-        <FaInstagram className=" text-[--green] size-[28px]" />
-      </div>
+
       <ConnectForm />
-      <p className="text-white text-[8px] my-5 italic">
+      <p className="text-white text-[8px] my-5 italic col-span-full">
         @2024 Jaimeen Makavana
       </p>
     </section>
