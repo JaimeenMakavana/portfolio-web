@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Connect = () => {
   return (
@@ -18,8 +20,59 @@ const Connect = () => {
           </span>
         </p>
       </div>
+      <div className=" flex justify-start items-center gap-4 my-5">
+        <FaLinkedinIn className=" text-[--green] size-[28px]" />
+        <FaGithub className=" text-[--green] size-[28px]" />
+        <FaXTwitter className=" text-[--green] size-[28px]" />
+        <FaInstagram className=" text-[--green] size-[28px]" />
+      </div>
+      <ConnectForm />
+      <p className="text-white text-[8px] my-5 italic">
+        @2024 Jaimeen Makavana
+      </p>
     </section>
   );
 };
 
 export default Connect;
+
+const ConnectForm = () => {
+  return (
+    <form action="" className="grid gap-y-3">
+      <Field label="Name" placeholder="Name" />
+      <Field label="Email" placeholder="Email" />
+      <Field label="Subject" placeholder="Subject" />
+      <div className="">
+        <label htmlFor="" className=" text-white mb-2 text-sm">
+          Message
+        </label>
+        <br />
+        <textarea
+          name=""
+          id=""
+          placeholder="Subject"
+          className=" bg-[#484848] focus:outline-none focus:border-none w-full px-2 rounded-sm py-1 text-sm"
+        ></textarea>
+      </div>
+      <button className=" px-5 py-1 rounded-full text-black bg-[--green] w-fit">
+        Submit
+      </button>
+    </form>
+  );
+};
+
+const Field = ({ label, placeholder }: any) => {
+  return (
+    <div className="">
+      <label htmlFor="" className=" text-white mb-2 text-sm">
+        {label}
+      </label>
+      <br />
+      <input
+        type="text"
+        placeholder={placeholder}
+        className=" bg-[#484848] focus:outline-none focus:border-none w-full px-2 rounded-sm py-1 text-sm"
+      />
+    </div>
+  );
+};

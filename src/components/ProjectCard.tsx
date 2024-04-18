@@ -22,7 +22,7 @@ const ImageDiv = () => {
       <button className=" absolute left-4 text-white top-[6px] text-sm bg-black rounded-full px-2 py-1">
         Conceptual Work
       </button>
-      <div className=" relative max-h-[300px] overflow-hidden rounded-t-md">
+      <div className=" max-h-[300px] overflow-hidden rounded-t-md">
         <Image
           src={DummyImage}
           alt=" "

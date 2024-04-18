@@ -15,7 +15,7 @@ const About = () => {
           About me
         </button>
       </div>
-      <div className=" max-h-[300px] my-10 overflow-hidden relative rounded-2xl">
+      <div className=" max-h-[300px] my-10 overflow-hidden rounded-2xl">
         <Image
           src={Profile}
           alt="profile"
